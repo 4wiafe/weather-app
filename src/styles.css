@@ -41,12 +41,48 @@ h1 {
 .weather-container {
   width: 80%;
   height: auto;
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 40px auto;
   color: #fff;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.search-bar {
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.search-bar:focus {
+  outline: none;
+}
+
+.search-btn {
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  background: #6161b9;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.2s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+}
