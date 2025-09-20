@@ -101,13 +101,17 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 20px;
 }
 
 .weather-icon {
   color: yellow;
   font-size: 5rem;
+}
+
+.info {
+  font-size: 1rem;
 }
 
 .temperature {
