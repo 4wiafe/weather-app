@@ -18,7 +18,7 @@ h1 {
   width: 100%;
   padding: 10px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
   font-size: 3rem;
 }
@@ -35,7 +35,6 @@ h1 {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: blur(3px);
 }
 
 .weather-container {
@@ -48,7 +47,7 @@ h1 {
   margin: 40px auto;
   color: #fff;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
 }
 
@@ -95,4 +94,20 @@ h1 {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
+}
+
+.weather-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+
+.weather-icon {
+  color: yellow;
+}
+
+.temperature {
+  font-weight: bold;
 }
