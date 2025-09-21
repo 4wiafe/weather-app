@@ -6,4 +6,6 @@ const weatherInfo = document.querySelector(".weather-info");
 
 async function renderData() {
   const data = await mapData(trimmed);
+
+  weatherInfo.innerHTML = "";
 }
