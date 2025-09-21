@@ -89,6 +89,10 @@ h1 {
   transform: scale(1.1);
 }
 
+.weather-info {
+  width: 100%;
+}
+
 .city-date {
   width: 100%;
   display: flex;
@@ -111,7 +115,7 @@ h1 {
   font-size: 5rem;
 }
 
-.info {
+.description {
   font-size: 1rem;
 }
 
