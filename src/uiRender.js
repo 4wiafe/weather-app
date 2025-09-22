@@ -3,9 +3,9 @@ import { mapData } from "./dataMapper.js";
 const weatherInfo = document.querySelector(".weather-info");
 
 async function renderData(inputValue) {
-  weatherInfo.innerHTML = "";
-  
   const data = await mapData(inputValue);
+
+  weatherInfo.innerHTML = "";
 
   const cityDate = document.createElement("div");
   cityDate.className = "city-date";
