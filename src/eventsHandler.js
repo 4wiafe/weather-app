@@ -9,4 +9,4 @@ searchButton.addEventListener("click", () => {
   renderData(inputValue);
 });
 
-export { searchBar };
+export { searchButton };
