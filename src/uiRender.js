@@ -19,10 +19,28 @@ async function renderData(inputValue) {
   const dateText = document.createElement("p");
   dateText.textContent = `${data.date}`;
 
+  const weatherStatus = document.createElement("div");
+  weatherStatus.className = "weather-status";
+  const weatherIcon = document.createElement("div");
+  weatherIcon.className = "weather-icon";
+  weatherIcon.textContent = `${data.icon}`;
+  const temperature = document.createElement("div");
+  temperature.className = "temperature";
+  tempValue = document.createElement("p");
+  tempValue.textContent = `${data.temp} ℃`;
+  const description = document.createElement("p");
+  description.className = "description";
+
   cityName.appendChild(cityText);
   date.appendChild(dateText);
   cityDate.append(cityName, date);
-  weatherInfo.append(cityDate);
+  temperature.appendChild(tempValue);
+  weatherStatus.append(
+    weatherIcon,
+    temperature,
+    description
+  );
+  weatherInfo.append(cityDate, weatherStatus);
 
   console.log(weatherInfo);
 }
