@@ -59,8 +59,6 @@ async function renderData(inputValue) {
     weatherStatus,
     humidityWindspeed
   );
-
-  console.log(weatherInfo);
 }
 
 export { renderData };
