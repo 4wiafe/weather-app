@@ -26,7 +26,7 @@ async function renderData(inputValue) {
   weatherIcon.textContent = `${data.icon}`;
   const temperature = document.createElement("div");
   temperature.className = "temperature";
-  tempValue = document.createElement("p");
+  const tempValue = document.createElement("p");
   tempValue.textContent = `${data.temp} ℃`;
   const description = document.createElement("p");
   description.className = "description";
@@ -36,11 +36,11 @@ async function renderData(inputValue) {
   const humidity = document.createElement("div");
   humidity.className = "humidity";
   const humidityText = document.createElement("p");
-  humidityText.textContent = `💧 ${data.humidity}`;
+  humidityText.textContent = `💧Humidity ${data.humidity}`;
   const windspeed = document.createElement("div");
   windspeed.className = "wind-speed";
   const windspeedValue = document.createElement("p");
-  windspeedValue.textContent = `💨${data.windspeed}mph`;
+  windspeedValue.textContent = `💨 Windspeed ${data.windspeed}mph`;
 
   cityName.appendChild(cityText);
   date.appendChild(dateText);
