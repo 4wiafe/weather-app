@@ -30,6 +30,7 @@ async function renderData(inputValue) {
   tempValue.textContent = `${data.temp} ℃`;
   const description = document.createElement("p");
   description.className = "description";
+  description.textContent = `${data.description}`;
 
   const humidityWindspeed = document.createElement("div");
   humidityWindspeed.className = "humidity-speed";

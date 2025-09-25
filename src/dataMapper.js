@@ -11,6 +11,8 @@ async function mapData(city) {
     humidity: weatherData.currentConditions.humidity,
     windspeed: weatherData.currentConditions.windspeed
   };
+
+  console.log(weatherData);
   
   return collected;
 }
