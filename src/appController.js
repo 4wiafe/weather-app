@@ -1,7 +1,9 @@
 import { searchButton } from "./eventsHandler.js"; 
-import { mapData } from "./dataMapper.js";
+import { renderData } from "./uiRender.js";
 
 function init() {
+  renderData("Accra");
+  
   searchButton;
 }
 
