@@ -1,25 +1,20 @@
-# Webpack + ESLint + Prettier Template
+# Weather App
+A simple weather app I built using *HTML* *CSS* and *JavaScript*
 
-A clean starter template for modern JavaScript projects.
+# Features
+- A search bar to enter city name
+- A button to get data info of entered city
 
-## Features
-- **Webpack** (with dev/prod/common configs)
-- **ESLint** (default recommended rules)
-- **Prettier** (with `.prettierrc` and `.prettierignore`)
-- Ready for Browser + Node projects
-- Zero framework opinionated (add React, Vue, etc. as needed)
+# How It Works
+- Default displayed city is Accra
+- Enter city of choice in the search bar
+- Click on _Get Weather_ button to fetch and display data
+- City name and date is displayed
+- Weather is displayed to match weather description
+- Temperature is displayed in degrees celsius
+- Humidity is displayed in percentage
+- Windspeed is displayed in miles per hour
 
-## Scripts
-- `npm run build` → Production build
-- `npm run dev` → Start development server
-- `npm run lint` → Run ESLint
-- `npm run lint:fix` → Fix linting issues
-- `npm run format` → Format with Prettier
-- `format:check` → Checks if everything is formatted
-
-## Getting Started
-```bash
-git clone https://github.com/<USERNAME>/<REPO>.git
-cd <REPO>
-npm install
-npm run dev 
+# What I Learned
+- I learned about APIs and to fetch and display data using API keys
+- I also learned about async/await in JavaScript
