@@ -23,7 +23,7 @@ async function renderData(inputValue) {
   weatherStatus.className = "weather-status";
   const weatherIcon = document.createElement("img");
   weatherIcon.className = "weather-icon";
-  weatherIcon.src = `./src/assets/icons/${data.icon}.svg`;
+  weatherIcon.src = `./src/assets/icons/${data.icon}.png`;
   const temperature = document.createElement("div");
   temperature.className = "temperature";
   const tempValue = document.createElement("p");
