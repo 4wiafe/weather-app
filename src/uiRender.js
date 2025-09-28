@@ -1,6 +1,7 @@
 import { mapData } from "./dataMapper.js"; 
 
 const weatherInfo = document.querySelector(".weather-info");
+const icons = require.context("./assets/icons", false, /\.png$/);
 
 async function renderData(inputValue) {
   const data = await mapData(inputValue);
@@ -23,7 +24,12 @@ async function renderData(inputValue) {
   weatherStatus.className = "weather-status";
   const weatherIcon = document.createElement("img");
   weatherIcon.className = "weather-icon";
-  weatherIcon.src = `./src/assets/icons/${data.icon}.png`;
+  try {
+    weatherIcon.src = icons(`./${data.icon}.png`);
+  } catch (e) {
+    console.warn(`Icon not found: ${data.icon}.png`);
+  }
+
   const temperature = document.createElement("div");
   temperature.className = "temperature";
   const tempValue = document.createElement("p");
